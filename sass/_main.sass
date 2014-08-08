@@ -1,4 +1,134 @@
 // Normally mainpage styles
+%in
+	margin: 0 40px 
+	min-width: 920px 
+.is-main
+	background: #333333 
+
+
+
+
+.header
+	@extend %in
+	position: relative
+	padding-top: 33px 
+	z-index: 10 
+	text-shadow: 0 1px 0 rgba(#000, .5)
+	.header__logo
+		+svg(logo,112,87)
+		+hide-text
+		margin-right: 125px 
+		float: left
+	ul
+		list-style: none
+		font-size: 14px 
+		text-align: left
+		li
+			display: inline-block
+		a
+			color: #A7AEB7
+			text-decoration: none 
+			margin-right: 35px 
+			display: inline-block
+			&:hover
+				color: #fff
+	.header__live
+		position: absolute
+		top: 33px
+		right: 0
+		font-size: 14px   
+		color: #A7AEB7
+		text-align: right
+		a
+			color: #AFBAC6
+			text-decoration: none 
+			&:hover
+				color: #fff
+.mainpage
+	position: relative
+	height: 570px 
+	overflow: hidden
+	min-width: 1000px 
+	.mainpage__video
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		overflow: hidden    
+	
+	video
+		width: 100%
+		position: absolute
+		left: 0
+		top: 0
+		
+	.mainpage__motto
+		@extend %in
+		position: absolute
+		left: 0
+		bottom: -10px
+		font-size: 100px   
+		color: #fff 
+		line-height: 1
+		+medium
+
+.app
+	+clr
+	@extend %in
+	position: relative
+	padding: 38px 0
+	
+	.app__text
+		font-size: 24px 
+		line-height: 32px
+		+lite
+		color: #fff 
+		overflow: hidden
+	.app__scr
+		position: absolute
+		top: -180px 
+		right: 80px
+	.app__link
+		float: right
+		margin-right: 370px 
+		width: 140px 
+		margin-left: 40px 
+		color: #fff
+		text-align: center
+		.app__icon
+			+s(icon)
+			display: inline-block
+	.app__title
+		+medium
+		font-size: 14px 
+		margin: 10px 0 13px 0 
+	.app__appstore
+		+svg(appstore,135,40)
+		+hide-text
+		display: inline-block
+
+		
+
+
+
+.footer
+	@extend %in
+	text-align: left
+	font-size: 10px 
+	color: #FFFFFF
+	opacity: .3 
+	+clr
+	line-height: 12px
+	padding-bottom: 10px 
+	.footer__logo
+		+svg(vg,41,21)
+		float: left
+		margin-right: 14px 
+	.footer__patent
+		margin-left: 20px 
+		text-decoration: none
+		color: #fff 
 
 
 

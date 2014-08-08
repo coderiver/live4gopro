@@ -7,13 +7,62 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
-<body>
+<body class="is-main">
 
-<!-- BEGIN  out-->
-<div class="out">
+<!-- begin mainpage  -->
+<div class="mainpage">
+	<!-- begin header  -->
+	<div class="header">
+		<a href="#" class="header__logo">LIVE4 GoPro</a>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Explore</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#">Privacy</a></li>
+			<li><a href="#">Terms</a></li>
+		</ul>
+		<div class="header__live">Live broadcast by <a href='#'>Alex Zhukov</a></div>
+	</div>
+	<!-- end header -->
+	<div class="mainpage__video">
+		<video  autoplay loop mute >
+			<source src="video/tnt24.ogv" type='video/ogg'>
+			<source src="video/tnt24.mp4" type='video/mp4'>
+			<source src="video/tnt24.webm" type='video/webm'>
+		</video>
+	</div>
 
+	<div class="mainpage__motto">Live LIVE</div>
 </div>
-<!-- END out-->
+<!-- end mainpage -->
+
+<!-- begin app  -->
+<div class="app">
+	<div class="app__in">
+		
+		<div class="app__link">
+			<div class="app__icon"></div>
+			<div class="app__title">LIVE4</div>
+			<a href="#" class="app__appstore"></a>
+		</div>
+		<div class="app__scr">
+			<img src="img/scr.png" alt="">
+		</div>
+		<div class="app__text">Share your emotions, adrenaline 
+		and delight live to all the internet auditory just with your GoPro Camera and iPhone and check what others
+		are sharing already</div>
+	</div>
+</div>
+<!-- end app -->
+
+
+<!-- begin footer  -->
+<div class="footer">
+	<div class="footer__logo"></div>
+	<p>© Video Gorillas, 2013-2014<br>
+Designed for use with GOPRO® products. GOPRO® is a registered trademarks of Woodman Labs, Inc. in the United States and other countries. <span class="footer__patent">Patents pending</span></p>
+</div>
+<!-- end footer -->
 
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </body>
