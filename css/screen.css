@@ -26,6 +26,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 @font-face { font-family: regular; src: url("fonts/cytiapro-regular-webfont.eot"); src: url("fonts/cytiapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cytiapro-regular-webfont.woff") format("woff"), url("fonts/cytiapro-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: thin; src: url("fonts/CytiaPro-Thin.eot"); src: url("fonts/CytiaPro-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/CytiaPro-Thin.woff") format("woff"), url("fonts/CytiaPro-Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
 body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height: 1.4; }
 
 .l { *zoom: 1; }
@@ -54,7 +56,7 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 .mainpage { position: relative; height: 570px; overflow: hidden; min-width: 1000px; }
 .mainpage .mainpage__video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; }
 .mainpage video { width: 100%; position: absolute; left: 0; top: 0; }
-.mainpage .mainpage__motto { position: absolute; left: 0; bottom: -10px; font-size: 100px; color: white; line-height: 1; font-family: medium, helvetica, sans-serif; }
+.mainpage .mainpage__motto { position: absolute; left: 0; bottom: -10px; font-size: 100px; color: white; line-height: 1; font-family: thin, helvetica, sans-serif; }
 
 .app { *zoom: 1; position: relative; padding: 38px 0; }
 .app:after { content: " "; display: table; clear: both; }
@@ -88,7 +90,7 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 
 .step { margin-bottom: 65px; position: relative; *zoom: 1; }
 .step:after { content: " "; display: table; clear: both; }
-.step .step__number { font-size: 72px; font-weight: normal; width: 100px; text-align: right; position: absolute; top: -13px; left: -115px; line-height: 1; font-family: light, helvetica, sans-serif; }
+.step .step__number { font-size: 72px; font-weight: normal; width: 100px; text-align: right; position: absolute; top: -7px; left: -115px; line-height: 1; font-family: light, helvetica, sans-serif; font-family: thin, helvetica, sans-serif; }
 .step img { float: left; margin-right: 17px; }
 .step .step__descr { padding-top: 133px; color: black; font-size: 18px; }
 .step .step__descr strong { font-weight: normal; font-family: black, helvetica, sans-serif; }
