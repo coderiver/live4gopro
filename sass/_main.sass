@@ -13,12 +13,17 @@
 	position: relative
 	padding-top: 33px 
 	z-index: 10 
-	text-shadow: 0 1px 0 rgba(#000, .5)
+	
+	height: 81px 
+	.is-main &
+		text-shadow: 0 1px 0 rgba(#000, .5)
 	.header__logo
-		+svg(logo,112,87)
+		+svg(logo_black,112,87)
 		+hide-text
-		margin-right: 125px 
+		margin-right: 128px 
 		float: left
+		.is-main &
+			+svg(logo,112,87)
 	ul
 		list-style: none
 		font-size: 14px 
@@ -26,12 +31,17 @@
 		li
 			display: inline-block
 		a
-			color: #A7AEB7
+			color: #9B9B9B 
 			text-decoration: none 
 			margin-right: 35px 
 			display: inline-block
-			&:hover
-				color: #fff
+			&:hover,&.is-active
+				color: #1A1919 
+			.is-main &
+				color: #A7AEB7 
+				&:hover,&.is-active
+					
+					color: #fff 
 	.header__live
 		position: absolute
 		top: 33px
@@ -116,23 +126,64 @@
 	@extend %in
 	text-align: left
 	font-size: 10px 
-	color: #FFFFFF
+	color: #4E4E4E 
 	opacity: .3 
 	+clr
 	line-height: 12px
 	padding-bottom: 10px 
+	.is-main &
+		color: #FFFFFF 
 	.footer__logo
-		+svg(vg,41,21)
+		+svg(vgb,41,21)
 		float: left
 		margin-right: 14px 
+		.is-main &
+			+svg(vg,41,21)
 	.footer__patent
 		margin-left: 20px 
 		text-decoration: none
-		color: #fff 
+		color: #4E4E4E 
+		.is-main &
+			color: #fff 
 
 
-
-
+.content
+	@extend %in
+	padding-left: 240px 
+	font-size: 12px 
+	line-height: 1.5
+	color: #1A1919   
+	font-family: Arial,sans-serif 
+	padding-bottom: 65px 
+	a
+		color: #1A1919 
+		text-decoration: underline
+	ul
+		margin: 1em 0 1em 2em
+		list-style-type: disc 
+		li
+			margin-bottom: 1em
+			padding-left: 10px   
+	h1
+		font-size: 32px 
+		font-weight: normal
+		+lite
+		color: #000000 
+		margin-bottom: 38px
+	p
+		margin-bottom: 1em
+	h2
+		margin: 24px 0
+		font-weight: bold
+		font-family: Arial,sans-serif
+		// +b
+		// font-weight: normal
+	h3
+		font-size: 16px 
+		font-weight: bold
+		margin: 12px 0
+		// font-weight: normal
+		// +b  
 
 
 
