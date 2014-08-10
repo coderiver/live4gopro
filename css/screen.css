@@ -81,3 +81,14 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 .content p { margin-bottom: 1em; }
 .content h2 { margin: 24px 0; font-weight: bold; font-family: Arial, sans-serif; }
 .content h3 { font-size: 16px; font-weight: bold; margin: 12px 0; }
+.content.content_support h1 { margin-bottom: 18px; }
+.content.content_support h2 { margin: 0; font-size: 18px; font-weight: normal; font-family: light, helvetica, sans-serif; color: black; margin-bottom: 23px; line-height: 1; position: relative; left: -6px; }
+.content.content_support h2 a { color: #0079ff; text-decoration: underline; }
+.content.content_support h2 span { text-transform: uppercase; background: #f9ad1a; padding: 2px 6px; margin-right: 4px; }
+
+.step { margin-bottom: 65px; position: relative; *zoom: 1; }
+.step:after { content: " "; display: table; clear: both; }
+.step .step__number { font-size: 72px; font-weight: normal; width: 100px; text-align: right; position: absolute; top: -13px; left: -115px; line-height: 1; font-family: light, helvetica, sans-serif; }
+.step img { float: left; margin-right: 17px; }
+.step .step__descr { padding-top: 133px; color: black; font-size: 18px; }
+.step .step__descr strong { font-weight: normal; font-family: black, helvetica, sans-serif; }
