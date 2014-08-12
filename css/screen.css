@@ -18,15 +18,15 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: black; src: url("fonts/cytiapro-black-webfont.eot"); src: url("fonts/cytiapro-black-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cytiapro-black-webfont.woff") format("woff"), url("fonts/cytiapro-black-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: black; src: url("/static/live4/fonts/cytiapro-black-webfont.eot"); src: url("/static/live4/fonts/cytiapro-black-webfont.eot?#iefix") format("embedded-opentype"), url("/static/live4/fonts/cytiapro-black-webfont.woff") format("woff"), url("/static/live4/fonts/cytiapro-black-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: light; src: url("fonts/cytiapro-light-webfont.eot"); src: url("fonts/cytiapro-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cytiapro-light-webfont.woff") format("woff"), url("fonts/cytiapro-light-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: light; src: url("/static/live4/fonts/cytiapro-light-webfont.eot"); src: url("/static/live4/fonts/cytiapro-light-webfont.eot?#iefix") format("embedded-opentype"), url("/static/live4/fonts/cytiapro-light-webfont.woff") format("woff"), url("/static/live4/fonts/cytiapro-light-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: medium; src: url("fonts/cytiapro-medium-webfont.eot"); src: url("fonts/cytiapro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cytiapro-medium-webfont.woff") format("woff"), url("fonts/cytiapro-medium-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: medium; src: url("/static/live4/fonts/cytiapro-medium-webfont.eot"); src: url("/static/live4/fonts/cytiapro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("/static/live4/fonts/cytiapro-medium-webfont.woff") format("woff"), url("/static/live4/fonts/cytiapro-medium-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: regular; src: url("fonts/cytiapro-regular-webfont.eot"); src: url("fonts/cytiapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/cytiapro-regular-webfont.woff") format("woff"), url("fonts/cytiapro-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: regular; src: url("/static/live4/fonts/cytiapro-regular-webfont.eot"); src: url("/static/live4/fonts/cytiapro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/static/live4/fonts/cytiapro-regular-webfont.woff") format("woff"), url("/static/live4/fonts/cytiapro-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: thin; src: url("fonts/CytiaPro-Thin.eot"); src: url("fonts/CytiaPro-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/CytiaPro-Thin.woff") format("woff"), url("fonts/CytiaPro-Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: thin; src: url("/static/live4/fonts/CytiaPro-Thin.eot"); src: url("/static/live4/fonts/CytiaPro-Thin.eot?#iefix") format("embedded-opentype"), url("/static/live4/fonts/CytiaPro-Thin.woff") format("woff"), url("/static/live4/fonts/CytiaPro-Thin.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 
 body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height: 1.4; }
 
@@ -41,8 +41,8 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 
 .header { position: relative; padding-top: 33px; z-index: 10; height: 81px; }
 .is-main .header { text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5); }
-.header .header__logo { background: url("../img/svg/logo_black.svg") no-repeat 0 0; -moz-background-size: 112px 87px 100%; -webkit-background-size: 112px 87px 100%; background-size: 112px 87px 100%; width: 112px; height: 87px; display: inline-block; font: 0/0 a; text-shadow: none; color: transparent; margin-right: 128px; float: left; }
-.is-main .header .header__logo { background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 112px 87px 100%; -webkit-background-size: 112px 87px 100%; background-size: 112px 87px 100%; width: 112px; height: 87px; display: inline-block; }
+.header .header__logo { background: url("/static/live4/img/svg/logo_black.svg") no-repeat 0 0; -moz-background-size: 112px 87px 100%; -webkit-background-size: 112px 87px 100%; background-size: 112px 87px 100%; width: 112px; height: 87px; display: inline-block; font: 0/0 a; text-shadow: none; color: transparent; margin-right: 128px; float: left; }
+.is-main .header .header__logo { background: url("/static/live4/img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 112px 87px 100%; -webkit-background-size: 112px 87px 100%; background-size: 112px 87px 100%; width: 112px; height: 87px; display: inline-block; }
 .header ul { list-style: none; font-size: 14px; text-align: left; }
 .header ul li { display: inline-block; }
 .header ul a { color: #9b9b9b; text-decoration: none; margin-right: 35px; display: inline-block; }
@@ -63,15 +63,15 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 .app .app__text { font-size: 24px; line-height: 32px; font-family: light, helvetica, sans-serif; color: white; overflow: hidden; }
 .app .app__scr { position: absolute; top: -180px; right: 80px; }
 .app .app__link { float: right; margin-right: 370px; width: 140px; margin-left: 40px; color: white; text-align: center; }
-.app .app__link .app__icon { background: url('../img/icons-s0f4fe9ae45.png') 0 0 no-repeat; width: 80px; height: 80px; display: inline-block; }
+.app .app__link .app__icon { background: url('../static/live4/img/icons-s0f4fe9ae45.png') 0 0 no-repeat; width: 80px; height: 80px; display: inline-block; }
 .app .app__title { font-family: medium, helvetica, sans-serif; font-size: 14px; margin: 10px 0 13px 0; }
-.app .app__appstore { background: url("../img/svg/appstore.svg") no-repeat 0 0; -moz-background-size: 135px 40px 100%; -webkit-background-size: 135px 40px 100%; background-size: 135px 40px 100%; width: 135px; height: 40px; display: inline-block; font: 0/0 a; text-shadow: none; color: transparent; display: inline-block; }
+.app .app__appstore { background: url("/static/live4/img/svg/appstore.svg") no-repeat 0 0; -moz-background-size: 135px 40px 100%; -webkit-background-size: 135px 40px 100%; background-size: 135px 40px 100%; width: 135px; height: 40px; display: inline-block; font: 0/0 a; text-shadow: none; color: transparent; display: inline-block; }
 
 .footer { text-align: left; font-size: 10px; color: #4e4e4e; opacity: 0.3; *zoom: 1; line-height: 12px; padding-bottom: 10px; }
 .footer:after { content: " "; display: table; clear: both; }
 .is-main .footer { color: white; }
-.footer .footer__logo { background: url("../img/svg/vgb.svg") no-repeat 0 0; -moz-background-size: 41px 21px 100%; -webkit-background-size: 41px 21px 100%; background-size: 41px 21px 100%; width: 41px; height: 21px; display: inline-block; float: left; margin-right: 14px; }
-.is-main .footer .footer__logo { background: url("../img/svg/vg.svg") no-repeat 0 0; -moz-background-size: 41px 21px 100%; -webkit-background-size: 41px 21px 100%; background-size: 41px 21px 100%; width: 41px; height: 21px; display: inline-block; }
+.footer .footer__logo { background: url("/static/live4/img/svg/vgb.svg") no-repeat 0 0; -moz-background-size: 41px 21px 100%; -webkit-background-size: 41px 21px 100%; background-size: 41px 21px 100%; width: 41px; height: 21px; display: inline-block; float: left; margin-right: 14px; }
+.is-main .footer .footer__logo { background: url("/static/live4/img/svg/vg.svg") no-repeat 0 0; -moz-background-size: 41px 21px 100%; -webkit-background-size: 41px 21px 100%; background-size: 41px 21px 100%; width: 41px; height: 21px; display: inline-block; }
 .footer .footer__patent { margin-left: 20px; text-decoration: none; color: #4e4e4e; }
 .is-main .footer .footer__patent { color: white; }
 
