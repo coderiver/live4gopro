@@ -2,6 +2,9 @@
 %in
 	margin: 0 40px 
 	min-width: 920px 
+	.is-responsive &
+		+r(1216)
+		min-width: 0 
 
 .is-main
 	height: 100%
@@ -64,6 +67,57 @@
 			text-decoration: none 
 			&:hover
 				color: #fff
+	.header__menu
+		display: none
+	.is-responsive &
+		position: relative
+		
+		+r(720)
+			.header__logo
+				position: absolute
+				z-index: 35 
+			ul
+				position: absolute
+				right: 0
+				top: 60px  
+				background: #fff 
+				z-index: 25 
+				width: 100% 
+				padding-bottom: 14px 
+				display: none
+				&.is-mobileshown
+					display: block
+				li
+					display: block
+					text-align: right
+					padding: 0
+					margin: 0 
+					margin-top: 20px  
+					a
+						font-size: 18px 
+						color: #D0021B 
+						padding: 0
+						margin: 0  
+						&.is-active
+							color: #1A1919 
+			.header__menu
+				float: right
+				display: block
+				cursor: pointer
+				position: relative
+				z-index: 30 
+				i
+					+svg(menu,24,15)
+					display: inline-block
+					vertical-align: middle
+					margin-left: 5px 
+			.header__current
+				font-size: 18px 
+				color: #1A1919
+				font-weight: normal
+				text-decoration: none 
+				display: inline-block
+				vertical-align: middle
 .mainpage
 	position: relative
 	height: 570px 
@@ -147,6 +201,8 @@
 	+clr
 	line-height: 12px
 	padding-bottom: 10px 
+	p
+		overflow: hidden
 	.is-main &
 		color: #FFFFFF 
 	.footer__logo
@@ -171,6 +227,11 @@
 	color: #1A1919   
 	font-family: Arial,sans-serif 
 	padding-bottom: 65px 
+	max-width: 800px 
+	+prevent-text
+	.is-responsive &
+		+r(720)
+			padding-left: 0 
 	a
 		color: #1A1919 
 		text-decoration: underline
@@ -186,6 +247,11 @@
 		+lite
 		color: #000000 
 		margin-bottom: 38px
+		.is-responsive &
+			+r(720)
+				text-align: left
+				margin-top: 20px 
+				margin-bottom: 20px 
 	p
 		margin-bottom: 1em
 	h2
@@ -226,6 +292,8 @@
 	margin-bottom: 65px 
 	position: relative
 	+clr
+	
+
 	.step__number
 		font-size: 72px 
 		font-weight: normal
@@ -247,8 +315,28 @@
 		strong
 			font-weight: normal
 			+b
+	.is-responsive &
+		margin-left: 50px 
+		+r(720)
+			img
+				float: none
+				margin: 0 
+				display: block
+			.step__number
+				left: -60px 
+				width: 60px 
+			.step__descr
+				padding: 0
+				margin-top: 20px  
 
-
+.is-desktop
+	display: block
+	+r(720)
+		display: none !important
+.is-mobile
+	display: none 
+	+r(720)
+		display: block
 
 
 
