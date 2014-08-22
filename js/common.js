@@ -7,5 +7,7 @@ head.ready(function() {
 		$('.header ul').toggleClass('is-mobileshown')
 	});
 
+	$(".user ul").sticky({topSpacing:170});
+
 	console.log($('body').html());
 });

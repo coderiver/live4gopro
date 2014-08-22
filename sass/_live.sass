@@ -1,0 +1,180 @@
++keyframes(rotate)
+	from
+		+rotate(0)
+	to
+		+rotate(360)
+.lives
+	.lives__loader
+		text-align: center
+		margin: 13px 0 
+		i
+			// +svg(loader,43,43)
+			width: 43px 
+			height: 43px 
+			background: url(../img/loader.png) no-repeat 0 0
+			display: inline-block
+			+animation(rotate 400s linear infinite)
+			-webkit-backface-visibility: hidden
+	.lives__more
+		border: 4px solid #EAEAEA 
+		display: block
+		text-decoration: none
+		color: #000 
+		margin-top: -20px 
+		font-size: 24px 
+		+lite
+		color: #A60115 
+		cursor: pointer
+		padding: 12px 0 12px 19px 
+		+r(720)
+			font-size: 16px 
+			text-align: center
+		i
+			+svg(dots,36,8)
+			display: inline-block
+			vertical-align: middle
+			margin-right: 19px 
+			position: relative
+			top: -3px 
+			+r(720)
+				display: none
+.live
+	margin-right: 144px 
+	position: relative
+	text-decoration: none
+	color: #000 
+	margin-bottom: 54px 
+	+r(720)
+		margin-right: 0 
+		margin-top: 20px 
+	h2
+		font-weight: normal
+		+lite
+		color: #000000
+		font-size: 24px  
+		margin-top: 5px
+		margin-bottom: 0  
+		+r(600)
+			font-size: 20px 
+	.live__media
+		position: relative
+		img
+			width: 100%
+			display: block 
+		.live__meta
+			width: 144px - 13px
+			position: absolute
+			bottom: 0
+			right: -144px
+			+r(720)
+				position: static
+				width: auto 
+		.live__user
+			position: absolute
+			top: 0
+			right: -144px
+			width: 144px - 13px
+			+r(720)
+				position: static
+				width: auto
+				margin-bottom: 15px 
+				margin-top: 10px 
+	.live__meta
+		position: absolute
+		bottom: 0 
+	.live__user
+		white-space: nowrap
+		.live__userav
+			display: inline-block
+			width: 36px 
+			height: 36px 
+			border-radius: 36px
+			vertical-align: middle
+		.live__username
+			display: inline-block
+			font-size: 14px 
+			color: #D0021B
+			+lite
+			margin-right: 9px 
+	.live__location
+		font-size: 12px  
+		color: #727272
+		+lite
+		padding-left: 27px  
+		margin-bottom: 15px 
+		position: relative
+		&:before
+			content: ' '
+			position: absolute
+			left: 3px
+			top: 0
+			+svg(location,14,19)
+	.live__time
+		font-size: 12px 
+		+lite
+		color: #000000
+		padding-left: 27px  
+		position: relative
+		span
+			color: #727272  
+			display: block
+			+reg
+		&:before
+			content: ' '
+			position: absolute
+			left: 0 
+			top: 0
+			+svg(live,20,17)
+.content .user
+	position: absolute
+	top: 170px  
+	width: 150px 
+	left: 40px
+	ul
+		list-style: none
+		margin: 0
+		padding: 0  
+		width: 150px 
+	li
+		margin: 0
+		padding: 0  
+	a
+		display: block
+		text-decoration: none
+		color: #D0021B
+		font-size: 14px  
+		+lite
+		padding: 7px 0 7px 37px
+		position: relative 
+		&:before
+			position: absolute
+			content: ' '
+		&.user__profile
+			margin-top: 40px 
+			&:before
+				+svg(i-profile,22,16)
+				left: 11px 
+				top: 8px 
+			&.is-active,&:hover
+				&:before
+					+svg(i-profileh,22,16)
+		&.user__events
+			&:before
+				+svg(i-fave,20,18)
+				left: 13px 
+				top: 7px 
+			&.is-active,&:hover
+				&:before
+					+svg(i-faveh,20,18)
+		&.user__explore
+			&:before
+				+svg(i-exploreh,22,14)
+				left: 11px 
+				top: 10px 
+			&.is-active,&:hover
+				&:before
+					+svg(i-exploreh,22,14)
+		&.is-active,&:hover
+			color: #000000 
+			box-shadow: inset 0 0 0 4px #EAEAEA
+			
