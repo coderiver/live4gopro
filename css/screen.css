@@ -166,6 +166,7 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 
 .content .user { position: absolute; top: 170px; width: 150px; left: 40px; }
 .content .user ul { list-style: none; margin: 0; padding: 0; width: 150px; }
+@media only screen and (max-width: 720px) { .content .user ul { position: static !important; } }
 .content .user li { margin: 0; padding: 0; }
 .content .user a { display: block; text-decoration: none; color: #d0021b; font-size: 14px; font-family: light, helvetica, sans-serif; padding: 7px 0 7px 37px; position: relative; }
 .content .user a:before { position: absolute; content: " "; }
