@@ -115,6 +115,7 @@
 		color: #000000
 		padding-left: 27px  
 		position: relative
+		cursor: pointer
 		span
 			color: #727272  
 			display: block
@@ -125,6 +126,14 @@
 			left: 0 
 			top: 0
 			+svg(live,20,17)
+	.live__map
+		display: none
+		img
+			display: block
+			width: 100% 
+	&.is-withlocation
+		.live__map
+			display: block
 .content .user
 	position: absolute
 	top: 170px  

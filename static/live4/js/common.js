@@ -1,4 +1,4 @@
-head.ready(function() {
+$(document).ready(function() {
 
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
@@ -8,6 +8,8 @@ head.ready(function() {
 	});
 
 	$(".user ul").sticky({topSpacing:170});
-
-	console.log($('body').html());
+	// $('.header__menu').sticky({topSpacing:10});
+	$('.live__time').click(function(event) {
+		$(this).parents('.live').toggleClass('is-withlocation')
+	});
 });
