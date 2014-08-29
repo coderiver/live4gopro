@@ -163,7 +163,6 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 .live .live__time { font-size: 12px; font-family: light, helvetica, sans-serif; color: black; padding-left: 27px; position: relative; cursor: pointer; }
 .live .live__time span { color: #727272; display: block; font-family: regular, helvetica, sans-serif; }
 .live .live__time:before { content: " "; position: absolute; left: 0; top: 0; background: url("/static/live4/img/svg/live.svg") no-repeat 0 0; -moz-background-size: 20px 17px 100%; -webkit-background-size: 20px 17px 100%; background-size: 20px 17px 100%; width: 20px; height: 17px; display: inline-block; }
-.live .live__map { display: none; }
 .live .live__map img { display: block; width: 100%; }
 .live.is-withlocation .live__map { display: block; }
 
