@@ -149,7 +149,7 @@ body { font-family: regular, helvetica, sans-serif; font-size: 12px; line-height
 .live h2 { font-weight: normal; font-family: light, helvetica, sans-serif; color: black; font-size: 24px; margin-top: 5px; margin-bottom: 0; }
 @media only screen and (max-width: 600px) { .live h2 { font-size: 20px; } }
 .live .live__media { position: relative; }
-.live .live__media img { width: 100%; display: block; }
+.live .live__media img, .live .live__media video { width: 100%; display: block; }
 .live .live__media .live__meta { width: 131px; position: absolute; bottom: 0; right: -144px; }
 @media only screen and (max-width: 720px) { .live .live__media .live__meta { position: static; width: auto; } }
 .live .live__media .live__user { position: absolute; top: 0; right: -144px; width: 131px; }
